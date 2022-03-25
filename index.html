@@ -1,228 +1,56 @@
-<!doctype html><html><meta charset="UTF-8">
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<!--
+0x93321165acc35263edd18bda7c2437f2a758f2ec		moonswap	masterchef
+0xabcdc91b5f8746a6e5298c6ba04c72e29ebd2460		kucoin		hotwallet
+0x4c659709750567bd505db6fab163c107bea9f161		moonswap	xmoon
+
+-->
 <head>
-<title>MTV.guru | The GURU Network</title>
-<meta name="description" content="MultiVAC Blockchain Applications, Tools & Services | Powered by The GURU Network">
-<meta name="keywords" content="MultiVAC, MTV, Chain, Decentralized Finance, Kompound, Guru Network, Free Blockchain Tools, defi, farming, Guru">
+<meta name="description" content="All Granaries - MTV.guru : Kompound Protocol">
+<meta name="keywords" content="Granary, Finance, Compound, Vault, Interest, Decentralized Finance, defi, yield farming, Guru Network, MultiVAC, MTV">
+<title>MTV.guru - MultiVAC Community Validator</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-<link rel="shortcut icon" href="img/ftm1337.jpg" />
-<style>*{color:#e3e9f2;overflow-wrap:break-word;overflow-x:hidden}
-a{text-decoration-line:none;padding:0 2px}
-html{background: radial-gradient(at top, #174, black);color:#e3e9f2;font-family:helvetica nueve, helvetica, robotica, ubuntu, roboto, sans-serif}
-input,button{border-radius:25px;background:black;text-align:center}
-button:hover{  box-shadow: 0 0px 10px 5px rgba(255,255,255,.2), 0px 0px 10px 5px rgba(255,255,255,0.1);transition: 0.2s}
-pre{overflow-x:auto;max-width:80%}
-#votingmvg{background:#040b22;border-radius:20px;border: #aaa solid 1px}
-.topbar{display:grid;grid-template-columns: auto;}
-#mvg pre{margin: 0 0 0 0;}
-#mvg hr{border: 0px dashed;width: 50%}
-#mvg div{background: #000013;margin: auto;border-radius: 15px;border:dashed 1px;border-top: none }
-	#mvg{width: 70vw}
-.mainpanels{display:grid;grid-template-columns:auto}
-.olsa{display:grid;grid-template-columns:auto auto 1%;}
-.mainstages{text-align:center;display:grid;grid-template-columns:	 auto;}
-.mainstage{padding:15px;box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: linear-gradient(45deg, rgba(0,255,0,0.25), rgba(0,0,255,0.25));padding:15px;
-margin:5%;border-radius: 15px;border:aqua 2px solid}
-hr{box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: #090919;border-radius: 15px;border:#0f7 2px solid;}
-.c2a{background: rgba(0,255,255,0.5);font-size:1em;padding:10px;margin:5px}
-.mainstage button{margin-bottom: 5px}
-.advert
-{
-background: linear-gradient(45deg, rgba(0,255,0,0.25), rgba(0,0,255,0.25));padding:15px;
+<link rel="shortcut icon" href="https://ftm.guru/crypto-icons/64.png"/>
+<style>
+*{
+scroll-behavior: smooth !important;
 }
-#errors{font-size:0.67em}
-.farmcontrols{background: rgba(0,255,255,0.5);font-size:1em;padding:10px;width:140px;margin:5px}
-.fardet span:nth-of-type(5n+2){text-align: left}
-.fardet span:nth-of-type(5n+4){text-align: right}
-td{padding: 0px 5px;min-width:max-content;min-width: -moz-max-content}
-tr:hover{background: darkslategray}
-html, body{padding: 0;margin: 0}
-.et{background: linear-gradient(to right,rgba(0,255,127,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:right}
-.ot{background: linear-gradient(to left,rgba(0,255,127,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:left}
-.mte{background: linear-gradient(to right,rgba(0,255,127,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:}
-.mto{background: linear-gradient(to left,rgba(0,255,127,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:}
-.uo{background: linear-gradient(to bottom,rgba(0,255,127,0.5),rgba(1,240,255,0.5));grid-template-columns: auto;text-align:}
-.tile{padding: 10px;display: grid;}
-.tile div{margin:10px}
-.cdt{background: linear-gradient(to right,rgba(0,255,127,0.5),rgba(1,240,255,0.5));border:2px solid #1ea; font-size:2em}
-.CDT{display: grid;grid-template-columns: auto 20% 1% 20% 1% 20% auto;padding: }
-div .mainstage:nth-child(4),div .mainstage:nth-child(7){padding: 0px;}
-@media(min-width:641px){
-	.mainpanels{grid-template-columns:auto;max-width: 50%;margin: auto}
-	.mainstages{grid-template-columns:auto;max-width: 50%;margin: auto}
-	#mvg{width: 70%;}
-	.hhr{width: 555px}
-  .CDT{display: grid;grid-template-columns: auto 10% 1% 10% 1% 10% auto;padding: }
-}
-.lowercat {text-align: left;padding:10px;line-height:1.5}
-.lowercat a{text-decoration-line: none}
-.lowercat span{font-size: 1.5em; font-weight:bold}
-@media(min-width:641px){
-	.mainpanels{grid-template-columns:auto;max-width: 50%;margin: auto}
-	.mainstages{grid-template-columns:auto;max-width: 50%;margin: auto}
-	.mainstats{grid-template-columns:auto auto auto;margin: auto}
-	#mvg{width: 70%;}
-	.hhr{width: 555px}
-}
-.gmul{border:1px solid;border-radius: 50%;	padding: 4px;margin: 0 0 0 4px;font-size: 0.8em;background: linear-gradient(225deg, rgba(0,255,0,0.5), rgba(0,0,255,0.5))}
-
-.maincards{grid-template-columns:auto ;margin: auto;display:grid;}
-.maincard{margin: calc(min(25px,10%));padding:10px;border : 1px aqua solid;
-	border-radius: 7px;
-	background: linear-gradient(45deg, rgba(0,255,0,0.125), rgba(0,0,255,0.125));
-	width: ;
-	margin: 10px;padding:10px;border : 1px aqua solid;
-	text-align:left
-}
-.maincard hr{border: 1px solid aqua}
-.maincard:hover{box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: linear-gradient(-127deg, rgba(0,255,0,0.125), rgba(0,0,255,0.125)); ;border:#0f7 1px solid;position:relative;top:-4px}
-
-@media(min-width:641px){
-	.maincards{grid-template-columns:50% 50%;margin: auto}
-}
-@media(min-width:1024px){
-	.maincards{grid-template-columns:33% 33% 33%;margin: auto}
-}
-
-* {
-  scrollbar-width: thick;
-  scrollbar-color: #0f7 #174;
-}
-*::-webkit-scrollbar {
-  width: 20px;
-}
-*::-webkit-scrollbar-track {
-  background: #174;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #0f7;
-  border-radius: 20px;
-  border: 3px solid #174;
-}
-.container {
-  position: ;
-  height: ;
-  top: 60px;
-  left: calc(50% - 300px);
-  display: grid;
-  padding: 40px;
-  overflow: auto;
-  color: red !important;;
-  padding:60px;
-}
-
-.card {
-  display: flex;
-  overflow: hidden;
-  height: ;
-  min-width: 200px;
-  max-width: 240px;
-  background-color: rgba(23,20,30,.85);
-  border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-  transition: 0.4s ease-out;
-  position: relative;
-  margin: 20px auto;
-  border-width: 3px;
-  border-style: solid;
-  border-image:
-    linear-gradient(
-      to top,
-      aqua,
-      rgba(0, 0, 0, 0)
-    )  0 0 1 100%;
-}
-
-
-.card:hover {
-  transform: translateX(-20px) translateY(-20px);
-  transition: 0.4s ease-out;
-  background: linear-gradient(to left,rgba(0,255,127,.5),rgba(1,240,255,.5));
-}
-
-
-
-.title {
+body {
+  background:#17082f;
   color: white;
-  font-weight: 1000;
-  position: absolute;
-  left: 20px;
-  top: 15px;
+  margin:auto;
+  font-family:helvetica nueve, helvetica, robotica, ubuntu, roboto, sans-serif;
 }
+.body{
+  margin: 8%
+}
+.topbar {
+  background: #6f42c1;
+  width: calc(100%-10px);
+  display:flex;
+  flex-wrap: wrap;
+  position:sticky;
+  top:0;
+  z-index: 1;
+  border-bottom: 8px ridge #17082f
+}
+.topbar a, details a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bolder;
+  margin: auto
+}
+.topbar a:first-child{font-size: 2em}
+h1{font-size: 3em}
+h2{}
+h1,h2,h3{color:#32fbe2;}
 
-.bar {
-  position: absolute;
-  top: 100px;
-  left: 20px;
-  height: 5px;
-  width: 180px;
-}
-
-.emptybar {
-  background-color: #2e3033;
-  width: 100%;
-  height: 100%;
-}
-
-.filledbar {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(to right,rgba(0,255,127,1),rgba(1,240,255,1));
-  transition: 0.6s ease-out;
-  border: 1px dashed black
-}
-
-.card:hover .filledbar {
-  width: 150px;
-  transition: 0.4s ease-out;
-
-}
-
-.stroke {
-  stroke: rgba(0,255,127,0.24);;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
-}
-
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
-}
-.two{display:grid;grid-template-columns:auto;cursor:pointer}
-.two div{border: 1px dashed;margin:5%;padding:5%;border-radius:20px;background:rgba(0,0,0,0.5)}
-.two div:hover{background: rgba(0,250,250,0.5);}
-.two div span{font-size:20vw}
-.two div b{font-size:1.25em}
-@media(min-width:639px){
-  .container{grid-template-columns: auto  auto}
-  .two{grid-template-columns: 50% 50%}
-  .two div span{font-size:25vw}
-}
-@media(min-width:899px){
-  .container{grid-template-columns: auto auto auto }
-    .two{grid-template-columns: 33% auto 33%}
-
-}
-@media(min-width:1279px){
-  .container{grid-template-columns: auto auto auto auto }
-      .two{grid-template-columns: 25% auto 25% 25%}
-
-}
-sup{top:-5vw;font-size:7vw}
 .lowerbar{
   font-size: 1.25em;
   font-weight: bolder;
-  overflow:hidden;
 }
 .lowerbar a{
   font-size: 0.75em;
@@ -231,41 +59,396 @@ sup{top:-5vw;font-size:7vw}
   color:#32fbe2;
   text-decoration: none
 }
-.lowerbar img{width:24px}
+.lowerbar img{width:24px;height:24px}
+.lowerbar .subimg{width:16px;height:16px;position: relative;right:9px;top:4px;margin-right:-11px}
+.hr1{
+  color: transparent;
+  border-top: 16px dotted #ea39b8;
+  max-width: 50%
+}
+.fore{color: gold !important;font-weight:400;font-size:1.337em}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  margin:10px 20px 10px 0px;
+  width: 80%;
+  padding: 20px;
+  border: 2px solid #1ea;
+  border-radius: 5px;
+  background:rgba(16,240,80,0.15);
+}
+.card hr{color: #1ea;border:solid 2px}
+.card sub{font-size: 1em}
+.card sup{font-size: 1.5em}
+.card:hover{
+  transform: translate(5px,-5px);
+  box-shadow: -5px 5px 5px rgba(16,240,80,0.75);
+  transition: 0.25s;
+  background: rgba(16,140,180,0.25);
+  cursor:zoom-in;
+}
+.ki img {
+  position: relative;
+  right:0;
+  left: 8px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 0 2px 2px rgba(16,240,80,1);
+}
+.cardapr span:first-child{font-size: 1em}
+.ki img:first-child{left: 16px}
+.ki{text-align: right}
+.fn{
+  max-height: 28px;
+  position: relative;
+  top: -5px;
+  font-size:1em;
+}
+.fn img {
+  position: relative;
+  top:10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 0 2px 2px rgba(16,180,240,0.5);
+}
+.fn img:nth-child(2) {margin: 0 -10px}
+.ib {
+  position: relative;
+  top:-24px !important;
+  left:8px !important;
+  width: 22px !important;
+  height:22px !important;
+}
+.iib {
+  position: relative;
+  top:-6px !important;
+  left:-12px !important;
+  width: 22px !important;
+  height:22px !important;
+}
+.cardapr{display:grid;grid-template-columns:auto auto;font-weight: bolder;font-size:1.2em}
+.bigapr{font-size: 1em;font-weight:bolder}
+strike{color: pink;font-style: italic;font-weight: lighter;font-size:1.2em}
+ul{font-size:1.1em}
+ul i{font-size:0.85em;}
+/*some*/
+.ddb {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: aqua;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-</style>
+.ddb span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.ddb span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.ddb:hover span {
+  padding-right: 25px;
+}
+
+.ddb:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.card2{background: #222;color: grey;border:2px solid gray;cursor:not-allowed !important;}
+.cardhide{display:none}
+.card2:hover{transform: none;box-shadow: none}
+.summore{margin: 5px 5% -5px;font-size:0.7em;color: aqua;font-style:italic;display:none}
+.summnum,.summtvl{font-size: 1.1em;color: white;font-weight: bold}
+summary.fore:hover{cursor: cell}
+.sum1num{color: white;font-weight: /*bold*/}
+
+td{font-family:mono;text-align:right;padding:4px 16px;min-width:max-content;font-size:1.25em;}
+td a{color: #fff;text-decoration:underline dotted #1ea;cursor: zoom-in}
+#pfd{font-size: 2.5em;font-weight: bold;}
+thead tr td{font-weight: bold;font-size: 1.2em;text-align: center;text-decoration:underline dotted gold;cursor: alias}
+.toggs{margin: 1%}
+details{font-size: 0.7em}
+td:last-child{display:none}
+td:first-child, thead tr td{font-family:inherit !important}
+.head2{display:none}
+.partners{display: grid;grid-template-columns: auto}
+.partner{display: grid;grid-template-columns: auto auto;}
+.partner div{word-wrap:  anywhere}
+.partner div {margin: 0 8px;}
+.partner img {height:128px;width:128px}
+@media(min-width:641px){
+  details{font-size: 1rem}
+  .card{width:40%;margin:4% auto}
+  .head2{display:block}
+  .partners{display: grid;grid-template-columns: 50% 50%}
+}</style>
 </head>
-<div align="center" class="uo"><br><br>
-	<span style="font-size:4em">MTV.guru</span>
-	<br>(mtv.kcc.guru is an official mirror)
-	<br><br>
-	<div align="center" class="two"><!--
-		<div onclick="window.location='kucino'">
-			<span>🎰</span><br>
-			<b>Casino</b>
-		</div>-->
-		<div onclick="window.location='GRAIN'">
-			<span>🌾</span><br>
-			<b>Kompound Protocol</b>
+<body>
+<div class="topbar">
+	<a href="">MTV.guru</a>
+	<a href="GRAIN/index.html">Kompound Protocol</a>
+	<a href="mtvscan/index.html" class="head2">MTVScan</a>
+	<a href="airdropper.html" class="head2">Airdrop Tool</a>
+	<a href="cv/index.html" class="head2">Verify Contract Source</a>
+	<div class="lowerbar" align="center">
+		<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/crypto-icons/mtv.png"></a>
+		<a target="_blank" href="https://kcc.guru"><img src="https://ftm.guru/crypto-icons/kcc.png"></a>
+		<a target="_blank" href="https://ftm.guru"><img src="https://ftm.guru/crypto-icons/ftm.svg"></a>
+	</div>
+	<!--
+	<a href="">FMC.guru</a>
+	<a href="">Others</a>
+	<a href="">Kompound</a>
+	<a href="">T</a>
+	<a href="">T</a>
+	<a href="">D</a>
+	-->
+</div>
+<div class="body">
+<h1>1st Community Node</h1>
+<h3 class="fore">MultiVAC Validator & Full Node</h3>
+<i>Powered by Regular users― First D.A.O. with on-chain voting!</i><br><br>
+<details><summary><button class="ddb" onclick='window.location="#all"'><span>Get Started</span></button></summary></details>
+<details><summary><button class="ddb"><a href="https://discord.com/invite/QpyfMarNrV" target="_blank"><span>Join Discord</span></a></button></summary></details>
+</details>
+
+
+
+<br><br>
+And a vast array of useful Tools, dApps & Services for MTV users & developers.
+<br><span style="font-size:0.8em">Earn MTV & partner-tokens for supporting MTV.guru, via our unique Reward-sharing mechanism, with extra bonuses for active users!</span>
+
+<br id="all"><br><br><br><br><br>
+
+	<!--
+		<div class="card" onclick="window.location='2201.html'">
+			<span class="cardapr">
+				<span>wFTM-USDC<br><strike>93.6%</strike></span>
+				<span class="ki"><img src="../img/ftm.svg"><img src="../img/usdc.svg"></span>
+			</span>
+			<span class="bigapr">111.4%</span>
+			<hr>
+			<div class="fn" ><img src="../img/knight.svg">knightSwap Farms</div>
 		</div>
-		<div onclick="window.location='mtvscan'">
-			<span>🧐</span><br>
-			<b>MTVScan: Query MTV</b>
+	-->
+
+<h2>Current Offerings (11)</h2>
+Get the most out of MultiVAC with our tailor-made Utilities, dApps, Service & strategic asset-management offerings.
+<br><br>
+<i class="toggs" style="border:1px dashed gold;border-radius:8px"> <input type="checkbox" checked onchange="togcar()"> Hide inactive? </i>
+
+<br><br><br><br><br><br>
+
+
+
+
+<details open><summary class="fore"><span class="fn" ></span> 💰 Asset-Management <span class="sum1num">(1)</span><br>
+	</summary><br>
+	<div class="cards">
+		<div class="card" onclick="window.location='https://mtv.guru/GRAIN'">
+			<span class="cardapr"><span>🌾 Kompound Protocol</span></span><br>
+			The First Yield Optimizer on the MultiVAC Blockchain. Re-invests your yield to buy more of the Original Assets.<br>
+			<br><hr><br>
+			<i>Earn 1% for creating each Compound, without any upfront investment.</i>
 		</div>
-		<div onclick="window.location='airdropper'">
-			<span>🌧️</span><br>
-			<b>MultiVAC Token Airdrop Multi-Sender</b>
+	</div>
+</details>
+<br>
+
+
+<details open><summary class="fore"><span class="fn" ></span> ⛓️ Blockchain Toolkit <span class="sum1num">(4)</span><br>
+	</summary><br>
+	<div class="cards">
+		<div class="card" onclick="window.location='https://scan.mtv.guru'">
+			<span class="cardapr"><span>🧐 MTVScan</span></span><br>
+			Query past and present Token information, view real-time Gas prices & transaction cost estimates.<br>
+			<br><hr><br>
+			<i>Includes a Transaction Status viewer and Allowance/Approval Checker.</i>
 		</div>
-		<div onclick="window.location='cv'">
-			<span>📜</span><br>
-			<b>MultiVAC Contract Verification</b>
+		<div class="card" onclick="window.location='https://mtv.guru/cv'">
+			<span class="cardapr"><span>📜 Source Verification</span></span><br>
+			Manual Smart Contract Source Code Reviewing, Matching and Verification Service.<br>
+			<br><hr><br>
+			<i>Source code cross-checking tool for Smart Contract users, with in-depth reports.</i>
+		</div>
+		<div class="card" onclick="window.location='https://ftm.guru/rawdata/tvl'">
+			<span class="cardapr"><span> 🔏 TvlGuru.sol</span></span><br>
+			A Smart Contract that calculates instantaneous TVL (via on-chain calls) & per-block TVL (via web3 calls) of any Decentralized Finance platform.<br>
+			<br><hr><br>
+			<i>The Universal TVL Finder can work with any Protocol, Project or EVM-like blockchain.</i>
+		</div>
+		<div class="card" onclick="window.location='https://scan.mtv.guru'">
+			<span class="cardapr"><span>Token Explorer</span></span><br>
+			Token information and transfer tracker.<br>
+			<br><hr><br>
+			<i>Find out total supply of a token, its decimals and other metadata. Filter token transactions by sender/receiver addresses.</i>
+		</div>
+	</div>
+</details>
+<br>
+
+
+<details open><summary class="fore"><span class="fn" ></span> ⛓️ Data Analytics <span class="sum1num">(1)</span><br>
+	</summary><br>
+	<div class="cards">
+		<div class="card" onclick="window.location='https://scan.mtv.guru/dex'">
+			<span class="cardapr"><span> 📊 DEX Rankings</span></span><br>
+			List of all DEXes of MultiVAC Network with in-depth data inlcuding trade-volumes, active-markets, total value locked, net liquidity and more!<br>
+			<br><hr><br>
+			<i>Real-time rankings sortable by TVL, Volume, Pools, etc.</i>
+		</div>
+	</div>
+</details>
+<br>
+
+
+<details open><summary class="fore"> 🗃️ Utilities <span class="sum1num">(1)</span><br>
+	</summary><br>
+	<div class="cards">
+		<div class="card" onclick="window.location='https://mtv.guru/airdropper'">
+			<span class="cardapr"><span>🌧️ Token Airdropper</span></span><br>
+			Bulk send MRC20 (ERC20) tokens to multiple addresses within 3 seconds.<br>
+			<br><hr><br>
+			<i>Supports upto 250 addresses per transaction & Batch-able transactions to send tokens to unlimited users quickly.</i>
 		</div><!--
-		<div onclick="window.location='approver'">
-			<span>✍️</span><br>
-			<b>Allowance Editor: Modify/Revoke Token Approvals</b>
+		<div class="card" onclick="window.location='6101.html'">
+			<span class="cardapr"><span>🖼️NFT Airdropper</span></span><br>
+			Bulk send MRC721 (ERC721) tokens to multiple addresses within 3 seconds.<br>
+			<br><hr><br>
+			<i>Supports upto 250 addresses per transaction & Batch-able transactions to send tokens to unlimited users quickly.</i>
 		</div>-->
 	</div>
+</details>
+<br>
+
+
+<details open><summary class="fore"> 🤝 B2B Services <span class="sum1num">(4)</span><br>
+	</summary><br>
+	<div class="cards">
+		<div class="card" onclick="window.location='https://discord.com/invite/QpyfMarNrV'">
+			<span class="cardapr"><span> 👨‍🌾 Farm-as-a-Service (FaaS)</span></span><br>
+			We create custom Farming dApps & Smart Contracts for all projects and host them on our platform. Our Farm-Maker service is free of cost!<br>
+			<br><hr><br>
+			<i>Get in touch via any of our social communities to get a farm deployed for your project!</i>
+		</div>
+		<div class="card" onclick="window.location='https://discord.com/invite/QpyfMarNrV'">
+			<span class="cardapr"><span> 📥 Staking-as-a-Service</span></span><br>
+			We create custom Staking dApps & Smart Contracts for all projects and host them on our platform. Our Staking-platoform is free of cost!<br>
+			<br><hr><br>
+			<i>Get in touch via any of our social communities to get a staking dApp deployed for your project!</i>
+		</div>
+		<div class="card" onclick="window.location='https://discord.com/invite/QpyfMarNrV'">
+			<span class="cardapr"><span> 🔂 Compounder-as-a-Service (CaaS)</span></span><br>
+			We create custom Vaults and compounder dApps (Smart Contracts + dApp) for all projects and host them on our platform, free of cost!<br>
+			<br><hr><br>
+			<i>Get in touch via any of our social communities to get a compounder or vault deployed for your yield farm!</i>
+		</div>
+		<div class="card" onclick="window.location='https://discord.com/invite/QpyfMarNrV'">
+			<span class="cardapr"><span> 🔒 Timelocks-as-a-Service</span></span><br>
+			We create custom TimeLocks (Smart Contracts + UI) for all sorts of DeFi tokens, normal tokens, auto-compounding assets and NFTs as well.<br>
+			<br><hr><br>
+			<i>Our Timelocks are Custom-made and can have features like multi-sigs, multi-beneficiary, linear/stepped/vested unlocks and more!</i>
+		</div>
+	</div>
+</details>
+<br>
+
+
+<!--<details><summary class="fore"><span class="fn" ><img src="../img/64.png"></span> ftm.guru LITE Farmlands  <span class="sum1num">(19)</span><br>
+	<div class="summore"><span class="summnum">19</span> LITE Farmlands stashed with <span class="summtvl">$123,456.789</span></div>
+	</summary><br>
+	<div class="cards">
+		<div class="card" onclick="window.location='../YS/2.html'">
+			<span class="cardapr">
+				<span>GRAIN<br>#2101</span>
+				<span class="ki"><img src="../img/ftm.svg"><img src="../img/64.png"><img class="ib" src="../img/spooky.sq.svg"></span>
+			</span><br>
+			<span class="bigapr">wFTM-ELITE Spooky LP</span>
+			<hr>
+			<div class="fn" ><img src="../img/64.png">The YieldState</div>
+		</div>
+	</div>
+	<a href="../LF/index.html">Explore all Farms</a>
+</details>
+<br>-->
+
+
+
+
+<div class="">
+</div>
+
+
+<div class="">
+</div>
+
+
 <br><br><br><br><br><br>
+
+
+
+<h2>Partners & Associates (1)</h2>
+
+<br><br>
+<div class="partners">
+	<div class="partner">
+		<img src="https://ftm.guru/icons/256.png">
+		<div>
+			<span class="fore">Guru Network</span>
+			<br><br>
+			A Multi-faceted growth hacker for indie projects. Tools, Services, niche utility-applications, bespoke product customization, liquidity enhancement & data analytics products provider.
+			<br><br><br><br>
+		</div>
+	</div>
+	<div class="partner">
+		<img src="https://ftm.guru/icons/htz.png">
+		<div>
+			<span class="fore">The Great Reset</span>
+			<br><br>
+			<li>X DAO Government</li>
+			<li>CyberSwap Multi-Chain DEX</li>
+			<li>Children of Zion NFT Marketplace</li>
+			<li>Hertz Yield Farm</li>
+			<br><br><br><br>
+		</div>
+	</div>
+</div>
+
+
+<br><br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+<hr class="hr1">
+<br><br><br><br>
 <div align="center"><i>Want to see more?<br><br>
 <a href="mailto:ftm1337@protonmail.com">📧</a> Let us know!</i><br>
 	<div class="lowerbar">
@@ -275,8 +458,10 @@ sup{top:-5vw;font-size:7vw}
 	</div>
 </div>
 <br><br><br><br><br><br>
-<hr class="hr1">
-<br><br><br><br><br><br>
+<div onclick="pantvl()">
+	<span style="font-size:2.5em;font-weight:bold" id="pantvl" class="fore">$0.000</span><sup style="font-size:1.2em;position:relative;top: -14px;">⟳</sup><br>
+	(Total Value Locked on MTV.guru)
+</div>
 
 <br><br>
 <div class="lowerbar">Powered by Guru Network.
@@ -287,18 +472,129 @@ sup{top:-5vw;font-size:7vw}
 	<a target="_blank" href="https://fmc.guru">MTV.guru</a>
 	<br><br>
 	<a target="_blank" href="https://kcc.guru"><img src="https://ftm.guru/crypto-icons/kcc.png"></a>
-	<a target="_blank" href="https://ftm.guru"><img src="https://ftm.guru/crypto-icons/64.png"></a>
+	<a target="_blank" href="https://mtv.guru"><img src="https://ftm.guru/crypto-icons/mtv.png"></a>
+	<a target="_blank" href="https://projects.fantom.network/project-detail/6125a8b6800c225308858b02"><img src="https://ftm.guru/crypto-icons/ftm.svg"></a>
 	<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/crypto-icons/FMC.svg"></a>
-	<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/crypto-icons/mtv.png"></a>
+	<a target="_blank" href="https://ftm.guru"><img src="https://ftm.guru/crypto-icons/64.png"></a>
+	<a target="_blank" href="https://kcc.guru/casino"><img src="https://ftm.guru/crypto-icons/kucino.svg"></a>
 	<a target="_blank" href="https://medium.com/@ftm1337"><img src="https://ftm.guru/crypto-icons/medium.svg"></a>
 	<a target="_blank" href="https://www.coingecko.com/coins/elite-1337"><img src="https://ftm.guru/crypto-icons/gecko.svg"></a>
 	<a target="_blank" href="https://coinmarketcap.com/currencies/elite-1337"><img src="https://ftm.guru/crypto-icons/cmc.svg"></a>
-	<a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"></a>
-	<a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/nomics.svg"></a>
-	<!--<a target="_blank" href="https://defillama.com/protocol/kccguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"></a>-->
+	<a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"><img class="subimg" src="https://ftm.guru/crypto-icons/64.png"></a><a target="_blank" href="https://defillama.com/protocol/kccguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"><img class="subimg" src="https://ftm.guru/crypto-icons/kucino.svg"></a><a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/nomics.svg"></a>
 </div>
 
-<br><br><br><br><br>
+<br><br><br><br><br><hr class="hr1">
+
 </div>
-<hr>
+</body>
+<script src="web3.min.js"></script>
+<script>
+CHAINID = 62621
+RPC_URL = "https://rpc.mtv.ac"
+window.addEventListener(
+	'load',
+	async function()
+	{
+		if(window.ethereum&&Number(window.ethereum.chainId)==CHAINID)
+		{web3 = new Web3(web3.currentProvider);if(!(window.ethereum.selectedAddress==null)){cw()}}
+		else
+		{
+			console.log("didnt find user addr, printing just the apr & tvl")
+			web3 = new Web3(RPC_URL);
+			//$("mainstage").innerHTML="";
+			//for(i=0;i< grains.length;i++){ggs(grains[i])};
+		}
+		pantvl()
+	},
+	false
+);
+
+function pantvl()
+{
+	pt=new web3.eth.Contract([{"constant": true,"inputs": [],"name": "tvl","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}],"0xe345A50C33e5c9D0284D6fF0b891c4Fc99a9C117")
+	pt.methods.tvl().call((e,r)=>{$("pantvl").innerHTML = "$"+(Number(r)/1e18).toLocaleString()});
+}
+function fornum(n,d)
+{
+	_n=(Number(n)/10**Number(d));
+	n_=_n;
+	if(_n>1e18){n_=(_n/1e18).toFixed(2)+"Qt"}
+	else if(_n>1e15){n_=(_n/1e15).toFixed(2)+"Qd"}
+	else if(_n>1e12){n_=(_n/1e12).toFixed(2)+"Tn"}
+	else if(_n>1e9){n_=(_n/1e9).toFixed(2)+"Bn"}
+	else if(_n>1e6){n_=(_n/1e6).toFixed(2)+"Mn"}
+	else if(_n>1e3){n_=(_n/1e3).toFixed(2)+"Th"}
+	else if(_n>0){n_=(_n/1e0).toFixed(5)+""}
+	return(n_);
+}
+function $(_) {return document.getElementById(_);}
+function cw(){}
+function switchchain(v)
+{
+	if(v=="250"){window.location="https://ftm.guru/GRAIN"}
+	if(v=="321"){window.location="https://kcc.guru/kompound"}
+	if(v=="62621"){window.location="https://mtv.guru"}
+}
+function dive()
+{
+	if($("ddb").parentElement.parentElement.getAttribute("open")==null)
+	{
+		$("ddb").parentElement.parentElement.setAttribute("open","");
+		$("ddb").children[0].innerHTML="Deeper Dive"
+	}
+	else
+	{
+		$("ddb").parentElement.parentElement.removeAttribute("open")
+		$("ddb").children[0].innerHTML="Dive Deeper"
+	}
+}
+function togcar()
+{
+	ac2 = document.getElementsByClassName("cardhide");
+	for(i=0;i< ac2.length;i++)
+	{
+		ac2[i].style.display=ac2[i].style.display=="block"?"none":"block"
+	}
+}
+function fornumstd(n,d){return Number((Number(n)/10**d).toFixed(2)).toLocaleString()}
+function sortit(n) {
+  var t, r, z, i, x, y, v, b, c = 0;
+  t = document.getElementById("mainstage");
+  z = true;
+  b = "a";
+  while (z) {
+    z = false;
+    r = t.rows;
+    for (i = 0; i < (r.length - 1); i++) {
+      v = false;
+      x = (r[i].getElementsByTagName("TD")[n].innerHTML).replaceAll(/,| |\.|\$|%/g,'');
+      if(isFinite(x)){x=Number(x)}else{x=x.toLowerCase()}
+      y = (r[i + 1].getElementsByTagName("TD")[n].innerHTML).replaceAll(/,| |\.|\$|%/g,'');
+      if(isFinite(y)){y=Number(y)}else{y=y.toLowerCase()}
+      if (b == "a") {
+        if ((x) > (y)) {
+          v= true;
+          break;
+        }
+      } else if (b == "d") {
+        if ((x) < (y)) {
+          v = true;
+          break;
+        }
+      }
+    }
+    if (v) {
+      r[i].parentNode.insertBefore(r[i + 1], r[i]);
+      z = true;
+      c ++;
+    } else {
+      if (c == 0 && b == "a") {
+        b = "d";
+        z = true;
+      }
+    }
+  }
+}
+const addCSS = s => document.head.appendChild(document.createElement("style")).innerHTML=s;
+</script>
 </html>
